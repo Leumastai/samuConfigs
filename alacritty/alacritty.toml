@@ -1,0 +1,84 @@
+# Configuration for Alacritty
+live_config_reload = true
+
+# Env settings
+[env]
+  TERM = "xterm-356color"
+
+# Selections
+[selection]
+# copys everything you selects to clipboard
+	semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+	save_to_clipboard = true
+	
+# Window settings
+[window]
+  # Window dimensions (changes require restart)
+  dimensions = { columns = 80, lines = 24 }
+
+  # Window position (changes require restart)
+  position = { x = 200, y = 30 }
+
+  # Window padding (changes require restart)
+  padding = { x = 50, y = 49 }
+
+  # Spread additional padding evenly around the terminal content area
+  dynamic_padding = false
+
+  # Window decorations
+  decorations = "buttonless"
+
+  # Startup mode (can be one of Fullscreen, Maximized, or Windowed)
+  startup_mode = "Windowed"
+
+  # Transparency
+  opacity = 0.9
+
+# Font configuration (changes require restart)
+[font]
+  normal = { family = "monospace", style = "Regular" }
+  bold = { family = "monospace", style = "Bold" }
+  italic = { family = "monospace", style = "Italic" }
+  size = 11.0
+  offset = { x = 0, y = 0 }
+  glyph_offset = { x = 0, y = 0 }
+
+# Cursor configuration (changes require restart)
+[cursor]
+  style = "Underline"
+  unfocused_hollow = true
+
+# Colors (changes require restart)
+[colors]
+  [colors.primary]
+    background = '0x181818'
+    foreground = '0xff0000'
+
+  [colors.normal]
+    black   = '0x000000'
+    red     = '0xff0000'
+    green   = '0x00ff00'
+    yellow  = '0xffff00'
+    blue    = '0x0000ff'
+    magenta = '0xff00ff'
+    cyan    = '0x00ffff'
+    white   = '0xffffff'
+
+  [colors.bright]
+    black   = '0x000000'
+    red     = '0xff0000'
+    green   = '0x00ff00'
+    yellow  = '0xffff00'
+    blue    = '0x0000ff'
+    magenta = '0xff00ff'
+    cyan    = '0x00ffff'
+    white   = '0xffffff'
+
+# Background opacity
+# background_opacity = 0.0
+
+# Visual bell configuration (changes require restart)
+[bell]
+  animation = "Ease"
+  duration = 300
+  color = '0xff0000'
