@@ -1,10 +1,6 @@
 # Configuration for Alacritty
 live_config_reload = true
 
-# Env settings
-[env]
-  TERM = "xterm-356color"
-
 # Selections
 [selection]
 # copys everything you selects to clipboard
